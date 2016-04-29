@@ -18,7 +18,7 @@ body, table, div {
 
  }
 
-#category { 
+#category, #salary_section { 
   	list-style-type: none; 
   	margin: auto; 
   	width: 50%;
@@ -27,10 +27,13 @@ body, table, div {
  #category li { 
   	padding: 0.4em; 
   	font-size: .9em; 
-  	height: 18px; }
+  	height: 18px; 
+  	cursor: pointer;
+  }
 .box {
 	display: inline-flex;
 }
+
 
 .logo {
 	height: 5em;
@@ -45,6 +48,10 @@ body, table, div {
 	width: 90%;
 }
 
+#salary {
+	height: 2em;
+	width: 2em;
+}
 
 
 
