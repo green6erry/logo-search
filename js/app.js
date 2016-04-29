@@ -1,54 +1,40 @@
   $(function() {
 
-console.log('page load');
-
 $('#category').selectable();
 
 
-
 function  criteria(category, minSalary){
-  //if(salary >= $('#logo-list').find('img[salary="'++'"]'))
-
-  var checkCategory = $('#logo-list').find('img[value="'+category+'"]');
-  checkCategory.removeClass('gray');
   
-  var logoSalary = parseInt($('#logo-list img').attr('alt'));
-  
-  var checkSalary = logoSalary <= minSalary;
-  console.log('salary', checkSalary)
+  $('#logo-list img').each(function(index){
+    var itemSalary = parseInt($(this).attr('alt'));
+    var itemCategory = parseInt($(this).attr('value'));
+    var checkSalary = itemSalary >= minSalary;
+    var checkCategory = itemCategory == category;
 
 
-  
-
-
-
-  if(checkSalary && checkCategory) {
-    
-  }
-
-  
-  
-  
-
-
- //console.log($('#logo-list img').get());
-
+    if(checkSalary && checkCategory){
+      $(this).removeClass('gray');
+    }
+    else if (checkCategory){
+      $(this).removeClass('gray');
+    }
+    else if (checkSalary){
+      $(this).removeClass('gray');
+    }
+  });
 }
 
 $('#content').submit(function(){
-  console.log('hi');
+  $('#logo-list img').each(function(){
+    $(this).addClass('gray');
+  });
   event.preventDefault();
   var genreSelected = $('#content').find('li[class="ui-selectee ui-selected"]').val();
   var salarySelected = parseInt($('#salary').val());
-  console.log(genreSelected, salarySelected);
   criteria(genreSelected, salarySelected);
 });
 
 
-
-
-function showResults() {}
-
- });
+});
 
  
