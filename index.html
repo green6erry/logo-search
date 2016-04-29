@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Tic-Tac-BOOM!</title>
+	<title>Top 20 Fortune 500 Logos</title>
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700italic,400italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="js/jquery-ui-1.11.4.custom/jquery-ui.css">
@@ -19,59 +19,76 @@
 	</head>
 <body>
 
-<div class="dialog" name="turn-decision" title="Welcome to Tic-Tac-Boom!">Who would like to go first?<br><br> 
-
-</div>
-
 <header>
-	<h1>Tic-Tac-BOOM!</h1>
+	<h2>Top 20 Fortune 500 Companys'</h2><h1>Logo Search</h1>
 	</header>
+	<br> 
+<hr>
 
 <main>
 
-<table id="content">
-
-<tr>
-	<td id="side-ex">	
-		<h1>X's</h1>
-		<p>Number of <br>games won:<br><b><em><span class="scoreEx">0</span></em></b></p>
-	</td>
-
-	<td>
-	<table class="board">
-		<tr class='top'>
-			<td class="left" ></td>
-			<td class="middle"></td>
-			<td class="right"></td>
-		</tr>
-		<tr class="center">
-			<td class="left"></td>
-			<td class="middle"></td>
-			<td class="right"></td>
-		</tr>
-		<tr class="bottom">
-			<td class="left"></td>
-			<td class="middle"></td>
-			<td class="right"></td>
-		</tr>
-	</table>
-
-	</td>
-
-
-	<td id="side-oh">
-		<h1>O's</h1>
-		<p>Number of <br>games won:<br><b><em><span class="scoreOh">0</span></em><b></p>
-	</td>
-</table>	
 
 
 
-<div class="dialog" name="oh-win" title="O's Win!">Congratulations O's! <br><br><p>So far, the quantity of games you've won is <span class="scoreOh"></span>!</p></div>
+<form id="content">
 
-<div class="dialog" name="ex-win" title="X's Win!">Congratulations X's! <br><br><p>So far, the quantity of games you've won is <span class="scoreEx"></span>!</p></div>
+	<div class="box"> 
+		<h3>Industry:</h3><br>
+		<ol id="category">
+			<li>Pharmaceuticals</li>
+			<li>Communications</li>
+			<li>Electronics</li>
+			<li>Automobiles</li>
+			<li>Everything</li>
+			<li>Gas</li>
+			<li>Real Estate(?)</li>
+			<li>Deals</li>
+			<li>Money</li>
+		</ol>
+	 </div>
 
-<audio id="splode" src="sounds/splode.wav">
+	 <div class="box">
+	 	<h3>CEO Salary Max: </h3>
+	 	
+	 	<input type="number"> million / year
+	 </div>
+
+	 
+
+ 	
+ 	<input type="submit">
+</form>	
+
+<hr>
+<div id='logo-list'>
+	<img src="logos/att.png" alt="" class="logo gray box">
+	
+	
+	<img src="logos/valero.png" alt="" class="logo gray box gas every">
+	<img src="logos/verizon.png" alt="" class="logo gray box comm elec">
+	<img src="logos/chevron.png" alt="" class="logo gray box gas">
+	<img src="logos/ford.png" alt="" class="logo gray box">
+	<img src="logos/costco.png" alt="" class="logo gray box deals">
+	<img src="logos/cvs.png" alt="" class="logo gray box deals">
+	<img src="logos/express-scripts.png" alt="" class="logo gray box pharm">
+	<img src="logos/united-health.png" alt="" class="logo gray box pharm">
+	<img src="logos/apple.png" alt="" class="logo gray box elec comm">
+	<img src="logos/mckesson.ico" alt="" class="logo gray box pharm">
+	<img src="logos/berkshire.jpg" alt="" class="logo gray box reales">
+	<img src="logos/walmart.png" alt="" class="logo gray box deals">
+	<img src="logos/exxon.png" alt="" class="logo gray box gas every">
+	<img src="logos/hp.png" alt="" class="logo gray box elec">
+	<img src="logos/gm.png" alt="" class="logo gray box auto">
+	<img src="logos/ge.png" alt="" class="logo gray box elec comm every deals">
+	<img src="logos/jp-morgan.jpg" alt="" class="logo gray box every money">
+	<img src="logos/phillips-66.png" alt="" class="logo gray box gas">
+	<img src="logos/fannie-mae.jpg" alt="" class="logo gray box deals money">
+</div>
+
+
+
+<!-- pharm, comm, elec, auto, every, gas, reales, deals, money-->
+
 
 </main>
 <footer></footer>

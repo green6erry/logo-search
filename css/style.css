@@ -1,85 +1,50 @@
-body, table {
+body, table, div {
 	text-align: center;
 	margin:auto;
 	padding: 0px;
 	outline: 0px;
 	border: 0px;
 	border-spacing: 0px;
-	font-family: 'Raleway', sans-serif;
+	font-family: Georgia, sans-serif;
 	/*outline: 1px green dotted;*/
 }
 
-.board {
-	background-color: none;
-	border: none;
-	outline:none;
-	border-spacing: 0px;
-	padding:4px;
+#category .ui-selecting { 
+	background: cornflowerblue; 
 }
 
-.board tr {
-	background-color: none;
-	display: table-row;
-	padding: 0;
-	/*width: 3em;
-	height: 3em;*/
+#category .ui-selected { 
+  	background: cornflowerblue; 
+
+ }
+
+#category { 
+  	list-style-type: none; 
+  	margin: auto; 
+  	width: 50%;
+  }
+
+ #category li { 
+  	padding: 0.4em; 
+  	font-size: .9em; 
+  	height: 18px; }
+.box {
+	display: inline-flex;
 }
 
-.board td {
-	width: 6em;
-	height: 6em;
-	cursor: pointer;
-
+.logo {
+	height: 5em;
+	margin: 7px;
+}
+.gray {
+	-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
 }
 
-.ex{
-	background:  url(../images/ex.png) center no-repeat;
-	background-size: contain;
+#logo-list {
+	width: 90%;
 }
 
-.oh {
-	background: slategray url(../images/oh.png) center no-repeat;
-	background-size: contain;
 
-}
 
-#side-ex, #side-oh {
-	padding: .7em;
-	overflow: auto;
-
-}
-#side-oh {text-align: right}
-#side-ex {text-align: left}
-
-.no-close .ui-dialog-titlebar-close {
-  display: none;
-  text-align: center;
-}
-
-/*board cell borders*/
-	.top>*{
-		border-bottom: 1px solid black;
-	}
-
-	.center>*{
-		border-bottom: 1px solid black;
-		border-top: 1px solid black;
-	}
-
-	.bottom>*{
-		border-top: 1px solid black;
-	}
-
-	.left {
-		border-right: 1px solid black;
-	}
-
-	.middle {
-		border-right: 1px solid black;
-		border-left: 1px solid black;
-	}
-
-	.right {
-		border-left: 1px solid black;
-	}
 
